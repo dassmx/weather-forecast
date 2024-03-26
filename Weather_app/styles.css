@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/** aplica cor em toda tela independente da resolução */
+html {
+  background-color: #e2eaf5;
+}
+
+body {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 40px;
+  column-gap: 100px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.navbar-container > img {
+  margin-right: 10px;
+}
+
+/* showcase */
+
+.showcase-container {
+  display: flex;
+  padding-left: 75px;
+  padding-right: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.showcase-text > h2:first-child {
+  font-size: 2.125rem;
+  font-weight: 700;
+  color: #2a394f;
+}
+
+.showcase-text > h2:last-child {
+  font-size: 5.125rem;
+  font-weight: 700;
+  color: #2a394f;
+}
+
+.showcase-text > p {
+  color: #9aa0a8;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* previsão por hora*/
+
+.hourly-forecast-container {
+  background: linear-gradient(90.28deg, #007dfe 0.22%, #3aa2ff 99.76%);
+  box-shadow: 0px 30px 50px -19px rgba(1, 126, 254, 0.5);
+  border-radius: 40px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hourly-forecast-container .hour-weather-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hourly-forecast-container .hour-weather-item > img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.hourly-forecast-container .hour-weather-item > p:first-child {
+  color: #fff;
+  opacity: 75%;
+  font-weight: 500;
+}
+
+.hourly-forecast-container .hour-weather-item > p:last-child {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+/* condicao do ar */
+
+.air-condition-container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 220px);
+  column-gap: 15px;
+}
+
+.air-condition-item {
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.air-condition-item > p:first-child {
+  color: #8f8f8f;
+}
+
+.air-condition-item > div:last-child {
+  color: #2a394f;
+  font-weight: 700;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.air-condition-item > div > img {
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+}
+
+.air-condition-item > div > p:last-child {
+  color: #2a394f;
+  font-size: 200;
+  font-size: 0.7rem;
+}
+
+/* previsao da semana*/
+
+.weekly-forecast-container {
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 40px;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.day-weather-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.day-weather-item > img {
+  width: 60px;
+  height: 60px;
+}
+
+.day-weather-item > p {
+  font-weight: 500;
+  color: #8f8f8f;
+}
+
+.day-weather-item > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.day-weather-item > div > p:first-child {
+  color: #2a394f;
+  font-weight: 500;
+  margin-right: 8px;
+}
+.day-weather-item > div > p:last-child {
+  color: #8f8f8f;
+  font-weight: 500;
+}
+.day-weather-item > p,
+.day-weather-item > img,
+.day-weather-item > div {
+  flex: 1;
+}
+
+/* utilidades */
+
+.custom-input {
+  border: none;
+  border-radius: 15px;
+  background-color: #fdfffe;
+  color: #232323;
+  padding: 16px;
+  width: 100%;
+}
+
+.custom-input:focus {
+  outline: 2px solid #3aa2ff;
+}
+
+.custom-input::placeholder {
+  color: #b1b8c0;
+}
