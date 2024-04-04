@@ -54,7 +54,6 @@
 
   .hourly-forecast-container .hour-weather-item {
     padding: 15px;
-    overflow-x: scroll;
     justify-content: center;
     gap: 30px;
   }
