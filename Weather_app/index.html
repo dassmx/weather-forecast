@@ -14,20 +14,19 @@
     <title>Clima Hoje</title>
   </head>
   <body>
-    <!-- *scripts* -->
-    <script src="./main.js"></script>
-
     <div class="app-container">
       <div class="left-column">
         <nav class="navbar-container">
           <img src="./images/logo.svg" alt="Clima Hoje" />
-          <input
-            class="custom-input"
-            type="text"
-            name="city"
-            id="city-search"
-            placeholder="Procure por cidades"
-          />
+          <form action="" class="custom-input">
+            <input
+              id="seach-city"
+              class="custom-input-seach-city"
+              type="text"
+              name="city"
+              placeholder="Procure por cidades"
+            />
+          </form>
         </nav>
 
         <div class="showcase-container">
@@ -166,5 +165,7 @@
         </div>
       </div>
     </div>
+    <!-- *scripts* -->
+    <script src="./main.js"></script>
   </body>
 </html>
