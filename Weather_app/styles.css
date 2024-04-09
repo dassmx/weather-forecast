@@ -191,8 +191,11 @@ body {
 }
 
 /* utilidades */
-
 .custom-input {
+  width: 100%;
+}
+
+.custom-input-seach-city {
   border: none;
   border-radius: 15px;
   background-color: #fdfffe;
@@ -200,7 +203,6 @@ body {
   padding: 16px;
   width: 100%;
 }
-
 .custom-input:focus {
   outline: 2px solid #3aa2ff;
 }
